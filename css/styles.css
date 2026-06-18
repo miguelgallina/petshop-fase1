@@ -1,0 +1,256 @@
+/* ==========================================
+   ESTILOS PERSONALIZADOS - PataFeliz PetShop
+   ========================================== */
+
+/* ----- CORPO E TIPOGRAFIA ----- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* ----- CABEÇALHO ----- */
+header {
+    background: linear-gradient(135deg, #2d3436 0%, #434a4d 100%);
+    padding: 25px 0 15px;
+    color: #ffffff;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+header h1 span {
+    color: #ff6b6b;
+}
+
+header p {
+    color: #dfe6e9;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+header hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 12px 0;
+}
+
+header nav {
+    font-size: 1.05rem;
+}
+
+header nav a {
+    color: #dfe6e9;
+    text-decoration: none;
+    padding: 0 8px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ff6b6b;
+}
+
+/* ----- RELÓGIO DIGITAL ----- */
+.relogio {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3436;
+    background-color: #dfe6e9;
+    padding: 6px 18px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ----- CARROSSEL ----- */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 20px;
+    bottom: 30px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ----- CARDS DE PRODUTOS ----- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    background-color: #f1f2f6;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.card-text {
+    color: #636e72;
+    font-size: 0.95rem;
+}
+
+.card .preco {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ff6b6b;
+}
+
+/* ----- BOTÕES ----- */
+.btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    font-weight: 600;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e55a5a;
+    border-color: #e55a5a;
+    transform: scale(1.02);
+}
+
+.btn-outline-primary {
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    color: #fff;
+}
+
+/* ----- FORMULÁRIO ----- */
+.form-control:focus,
+.form-select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+}
+
+fieldset {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+fieldset legend {
+    font-weight: 700;
+    color: #2d3436;
+    padding: 0 10px;
+    width: auto;
+    font-size: 1.2rem;
+}
+
+/* ----- TABELAS ----- */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #2d3436;
+    color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 107, 107, 0.05);
+}
+
+/* ----- RODAPÉ ----- */
+footer {
+    background-color: #2d3436;
+    color: #dfe6e9;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+footer h5 {
+    color: #ff6b6b;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #dfe6e9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ----- ACESSIBILIDADE ----- */
+/* Foco visível para navegação por teclado */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #ff6b6b;
+    outline-offset: 2px;
+}
+
+/* Texto alternativo para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ----- RESPONSIVIDADE ----- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    .carousel-item img {
+        height: 250px;
+    }
+    .carousel-caption h5 {
+        font-size: 1.3rem;
+    }
+    .card-img-top {
+        height: 180px;
+    }
+}
